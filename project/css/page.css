@@ -1,0 +1,80 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+}
+
+.navigation-bar {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-nav-bar {
+    padding-left: 1em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-nav-bar * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: large;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly
+}
+
+.content .info-page, .content .locandina{
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.content img{
+    width: 100%;
+    height: auto;
+}
+
+.emphasis-title{
+    font-size: xx-large;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.options{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buttons{
+    display: inline-block;
+    border: 1px #ed6524;
+    color: #ed6524;
+    margin-right: 10px;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1.5rem;
+}
+
+.selling{
+    background-color: #ed6524;
+    color: whitesmoke;
+}
