@@ -5,6 +5,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: whitesmoke;
+    color: #1c1e2ebb; 
 }
 
 @font-face {
@@ -22,8 +23,8 @@ body {
 
 .btn-nav-bar {
     padding-left: 1em;
-    text-align: center;
     font-family: 'Quicksand', sans-serif;
+    color: #1c1e2e; 
 }
 
 .btn-nav-bar * {
@@ -35,14 +36,15 @@ body {
 .content{
     display: flex;
     width: 100%;
-    justify-content:space-evenly
+    justify-content:space-evenly;
+    flex-wrap: wrap;
 }
 
 .content .info-page, .content .locandina{
     display: inherit;
+    justify-content: inherit;
     flex-direction: column;
     align-items: center;
-    justify-content:space-evenly;
 }
 
 .content img{
@@ -50,12 +52,13 @@ body {
     height: auto;
 }
 
-.emphasis-title{
+.content .emphasis-title{
     font-size: xx-large;
     font-family: 'Quicksand', sans-serif;
+    color: #1c1e2e; 
 }
 
-.options{
+.link-options{
     display: flex;
     height: auto;
     width: 100%;
@@ -64,17 +67,16 @@ body {
 }
 
 .buttons{
-    display: inline-block;
-    border: 1px #ed6524;
-    color: #ed6524;
     margin-right: 10px;
-    padding: 12px 30px;
+    padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
     border-radius: 1.5rem;
+    color: #ed6524;
+    border-color: #ed6524;
 }
 
-.selling{
+.buttons:hover{
     background-color: #ed6524;
     color: whitesmoke;
 }
+
