@@ -4,33 +4,28 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #f8f8fc;
     color: #1c1e2ebb; 
+    font-family: 'Roboto', sans-serif;
 }
 
-@font-face {
-	font-family: 'Quicksand';
-	src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-}
-
-.navigation-bar {
+.nav-bar{
     display: flex;
     height: 10%;
     width: 100%;
-    justify-content: flex-start;
     align-items: center;
-}
-
-.btn-nav-bar {
-    padding-left: 1em;
-    font-family: 'Quicksand', sans-serif;
     color: #1c1e2e; 
 }
 
-.btn-nav-bar * {
+.nav-bar--btn{
+    font-size: large;
+    padding-left: 1rem;
+}
+
+.nav-bar--btn *{
+    max-height: 35px;
     display: inline-block;
     vertical-align: middle;
-    font-size: large;
 }
 
 .content{
@@ -40,43 +35,68 @@ body {
     flex-wrap: wrap;
 }
 
-.content .info-page, .content .locandina{
+.info-page, .locandina{
     display: inherit;
-    justify-content: inherit;
     flex-direction: column;
     align-items: center;
+    font-size: small;
+    width: 40%;
 }
 
-.content img{
-    width: 100%;
-    height: auto;
+.info-page{
+    display: inline-block;
 }
 
-.content .emphasis-title{
-    font-size: xx-large;
+.info-page>*, locandina>*{
+    margin-bottom: 15px;
+}
+
+.info-page--title{
+    font-size: x-large;
     font-family: 'Quicksand', sans-serif;
     color: #1c1e2e; 
 }
 
-.link-options{
+.info-page--buttons{
     display: flex;
-    height: auto;
     width: 100%;
-    justify-content: flex-start;
     align-items: center;
 }
 
-.buttons{
-    margin-right: 10px;
+.info-page--buttons>.button{
     padding: 10px 20px;
-    text-align: center;
+    margin-right: 10px;
     border-radius: 1.5rem;
     color: #ed6524;
     border-color: #ed6524;
 }
 
-.buttons:hover{
+.info-page--buttons>.button:hover{
     background-color: #ed6524;
     color: whitesmoke;
 }
+
+.info-page--reviews{
+    vertical-align: middle;
+    padding: 10px;
+    background-color:#f0f0f5;
+    border-left: solid #ed6524 ;
+}
+
+.info-page--profile-review{
+    display: flex;
+    align-items: center;
+}
+
+.info-page--profile-review>img {
+    display: inline-block;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.locandina--poster{
+    height: auto;
+    max-height: 80vh;
+}
+
 
