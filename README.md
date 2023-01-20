@@ -1,2 +1,2 @@
-# eBook-flex
+# eBook
 Exercise assigned by CTMobi
